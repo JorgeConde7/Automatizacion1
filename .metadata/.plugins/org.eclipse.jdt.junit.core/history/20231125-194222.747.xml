@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CategoriaInsertarText" project="visorweb-junit" tests="3" started="3" failures="0" errors="1" ignored="0">
+  <testsuite name="pe.visorweb.categoria.CategoriaInsertarText" time="11.367" displayname="CategoriaInsertarText" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.categoria.CategoriaInsertarText]">
+    <testcase name="insertarCategoriaExitosaTest" classname="pe.visorweb.categoria.CategoriaInsertarText" time="5.032" displayname="insertarCategoriaExitosaTest()" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.categoria.CategoriaInsertarText]/[method:insertarCategoriaExitosaTest()]"/>
+    <testcase name="insertarCategoriaDatosVacioTest" classname="pe.visorweb.categoria.CategoriaInsertarText" time="4.264" displayname="insertarCategoriaDatosVacioTest()" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.categoria.CategoriaInsertarText]/[method:insertarCategoriaDatosVacioTest()]"/>
+    <testcase name="filtrarCategorias" classname="pe.visorweb.categoria.CategoriaInsertarText" time="2.071" displayname="filtrarCategorias()" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.categoria.CategoriaInsertarText]/[method:filtrarCategorias()]">
+      <error>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0f38efd26d8482ecf7bdd5b3f10fea3, findChildElements {id=B3FAB8D7A51A58F367EB4C9AA7CCA864_element_67, using=tag name, value=td}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Jorge\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61575/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0f38efd26d8482ecf7bdd5b3f10fea3&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#13;
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)&#13;
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)&#13;
+	at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:377)&#13;
+	at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:204)&#13;
+	at pe.visorweb.categoria.CategoriaInsertarText.filtrarCategorias(CategoriaInsertarText.java:148)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

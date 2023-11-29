@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CategoriaInsertarText.insertarCategoriaExitosaTest" project="visorweb-junit" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="pe.visorweb.categoria.CategoriaInsertarText" time="3.421" displayname="CategoriaInsertarText" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.categoria.CategoriaInsertarText]">
+    <testcase name="insertarCategoriaExitosaTest" classname="pe.visorweb.categoria.CategoriaInsertarText" time="3.421" displayname="insertarCategoriaExitosaTest()" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.categoria.CategoriaInsertarText]/[method:insertarCategoriaExitosaTest()]"/>
+  </testsuite>
+</testrun>

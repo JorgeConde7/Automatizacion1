@@ -1,0 +1,14 @@
+package pe.visorweb.selenium;
+
+import org.junit.Test;
+
+public class ChromDriverTest {
+
+	@Test
+	void abrirChromeTest() {
+		
+		WebDriverManager.chromedrive().setup();
+		webDriverManage.
+		
+	}
+}

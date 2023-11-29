@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LocalizarElementosTest" project="visorweb-junit" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="pe.visorweb.selenium.LocalizarElementosTest" time="9.993" displayname="LocalizarElementosTest" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.selenium.LocalizarElementosTest]">
+    <testcase name="buscarPorClassNameTest" classname="pe.visorweb.selenium.LocalizarElementosTest" time="3.21" displayname="buscarPorClassNameTest()" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.selenium.LocalizarElementosTest]/[method:buscarPorClassNameTest()]"/>
+    <testcase name="buscarPortagNameTest" classname="pe.visorweb.selenium.LocalizarElementosTest" time="1.715" displayname="buscarPortagNameTest()" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.selenium.LocalizarElementosTest]/[method:buscarPortagNameTest()]"/>
+    <testcase name="buscarPorNameTest" classname="pe.visorweb.selenium.LocalizarElementosTest" time="1.739" displayname="buscarPorNameTest()" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.selenium.LocalizarElementosTest]/[method:buscarPorNameTest()]"/>
+    <testcase name="buscarPorLinkTextTest" classname="pe.visorweb.selenium.LocalizarElementosTest" time="1.544" displayname="buscarPorLinkTextTest()" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.selenium.LocalizarElementosTest]/[method:buscarPorLinkTextTest()]"/>
+    <testcase name="buscarIdTest" classname="pe.visorweb.selenium.LocalizarElementosTest" time="1.781" displayname="buscarIdTest()" uniqueid="[engine:junit-jupiter]/[class:pe.visorweb.selenium.LocalizarElementosTest]/[method:buscarIdTest()]"/>
+  </testsuite>
+</testrun>

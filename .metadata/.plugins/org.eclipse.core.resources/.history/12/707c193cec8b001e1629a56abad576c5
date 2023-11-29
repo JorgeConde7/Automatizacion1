@@ -1,0 +1,50 @@
+package pe.visorweb.categoria;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class CategoriaInsertarText {
+
+	WebDriver driver;
+	String url="http://localhost:8080/VisorWeb/index.xhtml";
+	
+	@BeforeAll
+	static void configuracionInicial() {
+		WebDriverManager.chromedriver().setup();
+		
+	}
+	
+	@BeforeEach
+	void instanciarDriver() {
+		driver= new ChromeDriver();
+	}
+	
+	@AfterEach
+	void cerrarDriver() {
+		driver.quit();
+	}
+	
+	@Test
+	void insertarCategoriaExitosaTest() {
+		driver.get(url);
+		WebElement txtUsuario= driver.findElement(By.id("txtUsuario"));
+		txtUsuario.clear();
+		txtUsuario.sendKeys("admin");
+		
+		WebElement txtClave= driver.findElement(By.id("txtClave"));
+		txtClave.clear();
+		txtClave.sendKeys("clave");
+		
+		WebElement btnIniciarSesion=driver.findElement(By.id("btnIniciarSesion"));
+		btnIniciarSesion.click();
+		
+	}
+}

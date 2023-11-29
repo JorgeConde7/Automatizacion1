@@ -1,0 +1,9 @@
+package pe.visorweb.selenium;
+
+public class ChromDriverTest {
+
+	@Test
+	void abrirChromeTest() {
+		
+	}
+}
