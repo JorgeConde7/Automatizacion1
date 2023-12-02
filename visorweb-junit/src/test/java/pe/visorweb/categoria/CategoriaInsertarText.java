@@ -30,7 +30,7 @@ public class CategoriaInsertarText {
 		driver = new ChromeDriver();
 	}
 /*
-	@AfterEach
+	@After
 	void cerrarDriver() {
 		driver.quit();
 	}*/
@@ -63,7 +63,7 @@ public class CategoriaInsertarText {
 
 		WebElement txtNombre = driver.findElement(By.id("txtNombre"));
 		txtNombre.clear();
-		txtNombre.sendKeys("LAPTOP SELENIUM3");
+		txtNombre.sendKeys("LAPTOP LENOVO");
 
 		WebElement btnGuardar = driver.findElement(By.id("btnGuardar"));
 		btnGuardar.click();
@@ -109,7 +109,7 @@ public class CategoriaInsertarText {
 		WebElement btnGuardar = driver.findElement(By.id("btnGuardar"));
 		btnGuardar.click();
 
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		String mensajeEsperado = "Nombre: Error de validación: se necesita un valor.";
 		String mensajeObtenido = driver.findElement(By.xpath("//*[@id=\'messages\']/div/ul/li/span")).getText();
 
@@ -143,7 +143,7 @@ public class CategoriaInsertarText {
 		WebElement btnFiltrar= driver.findElement(By.id("btnFiltrar"));
 		btnFiltrar.click();
 		
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		List<WebElement> filas= driver.findElements(By.xpath("//tbody[@id='tablaCategorias_data']/tr"));
 		for(WebElement fila:filas) {
 			List<WebElement> celdas=fila.findElements(By.tagName("td"));
@@ -186,7 +186,7 @@ public class CategoriaInsertarText {
 		WebElement btnFiltrar= driver.findElement(By.id("btnFiltrar"));
 		btnFiltrar.click();
 		
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		List<WebElement> filas= driver.findElements(By.xpath("//tbody[@id='tablaCategorias_data']/tr"));
 		for(WebElement fila:filas) {
 			List<WebElement> celdas=fila.findElements(By.tagName("td"));
