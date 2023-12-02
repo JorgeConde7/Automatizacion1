@@ -30,12 +30,10 @@ public class MantenimientoProductos {
 		driver = new ChromeDriver();
 	}
 
-/*	@AfterEach
-	void cerrarDriver() {
-		driver.quit();
-	}
-
-	
+	/*
+	 * @AfterEach void cerrarDriver() { driver.quit(); }
+	 * 
+	 * 
 	 * @Test void insertarProductoExitoso() throws InterruptedException { int
 	 * numero=2; }
 	 * 
@@ -77,33 +75,36 @@ public class MantenimientoProductos {
 
 		WebElement menuHamburguesa = driver.findElement(By.xpath("//div[@class='btn-show active']"));
 		menuHamburguesa.click();
-		
+
 		WebElement menuModAlmacen = driver.findElement(By.xpath("//li/span[contains(.,'Mod. de Almacén')]"));
 		menuModAlmacen.click();
-		
+
 		Thread.sleep(3000);
 
 		WebElement menuMntProducto = driver.findElement(By.linkText("Mnt. de Productos"));
 		menuMntProducto.click();
 		
-				
-		Thread.sleep(3000);
+		WebElement btnFiltrar = driver.findElement(By.id("btnFiltrar"));
+		btnFiltrar.click();	
 		
+
+		Thread.sleep(3000);
+
 		driver.findElement(By.xpath("//*[@id=\"tablaProductos_data\"]/tr[1]")).click();
 		WebElement btnEliminar = driver.findElement(By.id("btnEliminar"));
 		btnEliminar.click();
 		WebElement btnSi = driver.findElement(By.id("btnSi"));
 		btnSi.click();
-		
+
 		Thread.sleep(2000);
 		String mensajeEsperado = "Se eliminó de manera correcta el Producto";
 		String mensajeObtenido = driver.findElement(By.xpath("//span[contains(.,'Se eliminó de manera correcta el Producto')]")).getText();
-		
+
 		Assertions.assertEquals(mensajeEsperado, mensajeObtenido);
-		
+		System.out.println("Se elimino correctamente");
+	
+
 	}
-
-
 
 	@Test
 	void EliminarProductoFlujoAlternativo() throws InterruptedException {
@@ -121,30 +122,31 @@ public class MantenimientoProductos {
 
 		WebElement menuHamburguesa = driver.findElement(By.xpath("//div[@class='btn-show active']"));
 		menuHamburguesa.click();
-		
+
 		WebElement menuModAlmacen = driver.findElement(By.xpath("//li/span[contains(.,'Mod. de Almacén')]"));
 		menuModAlmacen.click();
-		
+
 		Thread.sleep(3000);
 
 		WebElement menuMntProducto = driver.findElement(By.linkText("Mnt. de Productos"));
 		menuMntProducto.click();
 		
-				
+		WebElement btnFiltrar = driver.findElement(By.id("btnFiltrar"));
+		btnFiltrar.click();	
+
 		Thread.sleep(3000);
-		
-		driver.findElement(By.xpath("//*[@id=\"tablaProductos_data\"]/tr[1]")).click();
+
 		WebElement btnEliminar = driver.findElement(By.id("btnEliminar"));
 		btnEliminar.click();
 		WebElement btnSi = driver.findElement(By.id("btnSi"));
 		btnSi.click();
-		
+
 		Thread.sleep(2000);
 		String mensajeEsperado = "No ha seleccionado un Producto";
 		String mensajeObtenido = driver.findElement(By.xpath("//span[contains(.,'No ha seleccionado un Producto')]")).getText();
-		
+
 		Assertions.assertEquals(mensajeEsperado, mensajeObtenido);
-	
+		System.out.println("No ha seleccionado un producto");
 
 	}
 
